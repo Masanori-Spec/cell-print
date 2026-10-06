@@ -1,0 +1,28 @@
+{
+  "nbformat": "5.11.1",
+  "nbconvert": "7.17.1",
+  "status": "accepted-by-official-validate-and-HTMLExporter",
+  "selected_ids": [
+    "nested-python",
+    "tabs-python",
+    "long-python"
+  ],
+  "exact_sources": true,
+  "forbidden_content_absent": true,
+  "fidelity_controls_rejected": [
+    "extra-unselected-cell",
+    "indentation-deleted",
+    "blank-line-deleted",
+    "duplicate-id"
+  ],
+  "official_schema_controls_rejected": [
+    "duplicate-cell-id",
+    "invalid-cell-id",
+    "source-wrong-type",
+    "outputs-wrong-type"
+  ],
+  "notebook_sha256": "b4b45bcd748a34e81ed7a8f87250db4a981efb6d73d579392acc66e56161391f",
+  "html_sha256": "d391fa4aeece370d57c7a2589c497f9e389cf4d7014b8760a957680d0ea35ed4",
+  "kernel_executions": 0,
+  "scope": "Synthetic exported excerpt and literal source preservation; no notebook execution"
+}

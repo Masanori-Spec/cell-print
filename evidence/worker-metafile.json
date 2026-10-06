@@ -1,0 +1,167 @@
+{
+  "inputs": {
+    "src/prism-flags.mjs": {
+      "bytes": 147,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/prismjs/components/prism-core.js": {
+      "bytes": 38451,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/prismjs/components/prism-python.js": {
+      "bytes": 2508,
+      "imports": []
+    },
+    "src/generated/schema-0.cjs": {
+      "bytes": 67230,
+      "imports": [],
+      "format": "cjs"
+    },
+    "src/generated/schema-1.cjs": {
+      "bytes": 67230,
+      "imports": [],
+      "format": "cjs"
+    },
+    "src/generated/schema-2.cjs": {
+      "bytes": 68324,
+      "imports": [],
+      "format": "cjs"
+    },
+    "src/generated/schema-3.cjs": {
+      "bytes": 71025,
+      "imports": [],
+      "format": "cjs"
+    },
+    "src/generated/schema-4.cjs": {
+      "bytes": 76244,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/ajv/dist/runtime/ucs2length.js": {
+      "bytes": 808,
+      "imports": [],
+      "format": "cjs"
+    },
+    "src/generated/schema-5.cjs": {
+      "bytes": 80507,
+      "imports": [
+        {
+          "path": "node_modules/ajv/dist/runtime/ucs2length.js",
+          "kind": "require-call",
+          "original": "ajv/dist/runtime/ucs2length"
+        }
+      ],
+      "format": "cjs"
+    },
+    "src/engine.mjs": {
+      "bytes": 7406,
+      "imports": [
+        {
+          "path": "src/prism-flags.mjs",
+          "kind": "import-statement",
+          "original": "./prism-flags.mjs"
+        },
+        {
+          "path": "node_modules/prismjs/components/prism-core.js",
+          "kind": "import-statement",
+          "original": "prismjs/components/prism-core.js"
+        },
+        {
+          "path": "node_modules/prismjs/components/prism-python.js",
+          "kind": "import-statement",
+          "original": "prismjs/components/prism-python.js"
+        },
+        {
+          "path": "src/generated/schema-0.cjs",
+          "kind": "import-statement",
+          "original": "./generated/schema-0.cjs"
+        },
+        {
+          "path": "src/generated/schema-1.cjs",
+          "kind": "import-statement",
+          "original": "./generated/schema-1.cjs"
+        },
+        {
+          "path": "src/generated/schema-2.cjs",
+          "kind": "import-statement",
+          "original": "./generated/schema-2.cjs"
+        },
+        {
+          "path": "src/generated/schema-3.cjs",
+          "kind": "import-statement",
+          "original": "./generated/schema-3.cjs"
+        },
+        {
+          "path": "src/generated/schema-4.cjs",
+          "kind": "import-statement",
+          "original": "./generated/schema-4.cjs"
+        },
+        {
+          "path": "src/generated/schema-5.cjs",
+          "kind": "import-statement",
+          "original": "./generated/schema-5.cjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/worker.mjs": {
+      "bytes": 420,
+      "imports": [
+        {
+          "path": "src/engine.mjs",
+          "kind": "import-statement",
+          "original": "./engine.mjs"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "worker.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/worker.mjs",
+      "inputs": {
+        "node_modules/prismjs/components/prism-core.js": {
+          "bytesInOutput": 7717
+        },
+        "src/generated/schema-0.cjs": {
+          "bytesInOutput": 40008
+        },
+        "src/generated/schema-1.cjs": {
+          "bytesInOutput": 40008
+        },
+        "src/generated/schema-2.cjs": {
+          "bytesInOutput": 40545
+        },
+        "src/generated/schema-3.cjs": {
+          "bytesInOutput": 42090
+        },
+        "src/generated/schema-4.cjs": {
+          "bytesInOutput": 45271
+        },
+        "node_modules/ajv/dist/runtime/ucs2length.js": {
+          "bytesInOutput": 302
+        },
+        "src/generated/schema-5.cjs": {
+          "bytesInOutput": 48025
+        },
+        "src/prism-flags.mjs": {
+          "bytesInOutput": 60
+        },
+        "src/engine.mjs": {
+          "bytesInOutput": 5549
+        },
+        "node_modules/prismjs/components/prism-python.js": {
+          "bytesInOutput": 2113
+        },
+        "src/worker.mjs": {
+          "bytesInOutput": 288
+        }
+      },
+      "bytes": 272526
+    }
+  }
+}

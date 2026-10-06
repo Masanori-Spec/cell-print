@@ -1,0 +1,52 @@
+
+> cell-print@0.1.0 verify
+> npm run fixture && npm run build && npm test
+
+
+> cell-print@0.1.0 fixture
+> node scripts/generate-fixture.mjs
+
+Generated synthetic notebook + actual exports: 3 selected, 3507 characters
+
+> cell-print@0.1.0 build
+> node scripts/build.mjs
+
+Generated six standalone official schema validators; no runtime compiler/eval
+Single offline HTML: 308063 bytes; runtime packages: prismjs, ajv
+
+> cell-print@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ original ordering, exact text/IDs, empty outputs, safe metadata (10.106302ms)
+✔ all unselected cells and outputs/metadata are absent from raw artifacts (1.988861ms)
+✔ NBSP, CRLF, tabs, combining and astral characters survive (0.737451ms)
+✔ unknown language is plain text and arbitrary language metadata is discarded (0.625845ms)
+✔ reject duplicate IDs (0.61585ms)
+✔ reject bad ID (0.435634ms)
+✔ reject missing v4.5 ID (0.322177ms)
+✔ reject invalid source (0.366082ms)
+✔ reject invalid output shape (0.35869ms)
+✔ reject invalid execution count (0.565236ms)
+✔ reject invalid metadata (0.551025ms)
+✔ reject invalid cell type (0.259444ms)
+✔ reject unsupported minor (0.302087ms)
+✔ reject unsupported major (0.261086ms)
+✔ reject too many cells (2.650759ms)
+✔ reject NUL source (0.349767ms)
+✔ reject unpaired surrogate source (0.288477ms)
+✔ malformed JSON fails without echo (0.265563ms)
+✔ raw byte and tree limits fail closed (15.149028ms)
+✔ legacy notebooks receive bounded unique IDs, existing IDs kept (2.715024ms)
+✔ legacy collision allocation remains within schema limit (0.722188ms)
+✔ empty, repeated, unknown, excessive and oversized selections fail (9.499414ms)
+✔ Unicode codepoints counted without splitting astral characters (9.366669ms)
+✔ actual bundled worker handles object messages with Prism auto-listener disabled (67.82991ms)
+✔ offline single HTML contains full notices and no remote runtime references (2.737357ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 161.528009

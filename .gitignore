@@ -1,0 +1,7 @@
+node_modules/
+test-results/
+playwright-report/
+release/
+__pycache__/
+.venv/
+.build/
